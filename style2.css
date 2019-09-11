@@ -1,6 +1,8 @@
  table {
             font: 2em Arial, sans-serif;
             font-size: 20px;
+            border: solid 5px #000000;
+            border-collapse: collapse;
         }
  .text{
        text-align:  center;
