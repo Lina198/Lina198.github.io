@@ -15,4 +15,10 @@
        color: #4B0082; 
        height: 5px; 
       }
+td, th {
+      color: #FAEBD7; 
+      }
+.weekend{
+ color: #CD5C5C	; 
+}
       
