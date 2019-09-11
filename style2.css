@@ -1,0 +1,18 @@
+ table {
+            font: 2em Arial, sans-serif;
+            font-size: 20px;
+        }
+ .text{
+       text-align:  center;
+       }
+ body { 
+      background: url(kniga.jpg)no-repeat; 
+       background-size : cover;
+      }
+   hr {
+       border: none; 
+       background-color: #4B0082; 
+       color: #4B0082; 
+       height: 5px; 
+      }
+      
