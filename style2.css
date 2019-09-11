@@ -9,16 +9,13 @@
       background: url(kniga.jpg)no-repeat; 
        background-size : cover;
       }
-   hr {
-       border: none; 
-       background-color: #4B0082; 
-       color: #4B0082; 
-       height: 5px; 
-      }
 td, th {
       background: #FAEBD7; 
       }
 .weekend{
  background: #CD5C5C	; 
+}
+border{
+ color:#000000;
 }
       
