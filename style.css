@@ -5,29 +5,29 @@ body {
   .stroke {
     font: bold 3em Arial, sans-serif;
     color: #4B0082;
-    text-shadow: #cad5e2 1px 1px 0, #cad5e2 2px 2px 0, 
-                 #cad5e2 3px 3px 0, #cad5e2 4px 4px 0, 
-                 #cad5e2 5px 5px 0;
+    text-shadow: #FFFFE0 1px 1px 0, #FFFFE0 2px 2px 0, 
+                 #FFFFE0 3px 3px 0, #FFFFE0 4px 4px 0, 
+                 #FFFFE0 5px 5px 0;
   }
  .text {
     text-align:  center;
    }
  hr {
     border: none; 
-    background-color: #4B0082; 
-    color: #4B0082; 
+    background-color:#FFFFE0; 
+    color: #FFFFE0; 
     height: 5px; 
     }
  h2 {
   text-shadow: #000080 0 0 10px; 
  }
  img {
-        border: 5px solid #4B0082 ;
+        border: 5px solid #FFFFE0 ;
     }
  .str {
     font: 2em Arial, sans-serif;
-    text-shadow: #4B0082 1px 1px 0, #4B0082 -1px -1px 0, 
-                #4B0082 -1px 1px 0, #4B0082 1px -1px 0;
+    text-shadow: #4B0082 1px 1px 0, #FFFFE0 -1px -1px 0, 
+                #4B0082 -1px 1px 0, #FFFFE0 1px -1px 0;
    }
  .dark {
     text-shadow: #000080 0 0 10px; 
