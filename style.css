@@ -4,7 +4,7 @@ body {
     }
   .stroke {
     font: bold 3em Arial, sans-serif;
-    color: #FFFFE0;
+    color:#BC8F8F;
     text-shadow: #FFFFE0 1px 1px 0, #FFFFE0 2px 2px 0, 
                  #FFFFE0 3px 3px 0, #FFFFE0 4px 4px 0, 
                  #FFFFE0 5px 5px 0;
@@ -15,19 +15,19 @@ body {
  hr {
     border: none; 
     background-color:#FFFFE0; 
-    color: #FFFFE0; 
+    color: #BC8F8F; 
     height: 5px; 
     }
  h2 {
-  text-shadow: #FFFFE0 0 0 10px; 
+  text-shadow: #BC8F8F 0 0 10px; 
  }
  img {
         border: 5px solid #FFFFE0 ;
     }
  .str {
     font: 2em Arial, sans-serif;
-    text-shadow: #FFFFE0 1px 1px 0, #FFEFD5 -1px -1px 0, 
-                #FFFFE0-1px 1px 0, #FFEFD5 1px -1px 0;
+    text-shadow: #FFFFE0 1px 1px 0, #BC8F8F-1px -1px 0, 
+                #FFFFE0-1px 1px 0, #BC8F8F 1px -1px 0;
    }
  .dark {
     text-shadow:#FFFFE0 0 0 10px; 
