@@ -33,9 +33,9 @@ body {
     text-shadow: #000080 0 0 10px; 
    }
 footer {
-    background: -webkit-linear-gradient(#4B0082, #000080); 
-    background: -o-linear-gradient(#4B0082,#000080 ); 
-    background: -moz-linear-gradient(#4B0082,#000080 ); 
-    background: linear-gradient(#4B0082, #000080); 
-    background-color: #4B0082; 
+    background: -webkit-linear-gradient(#FFFFE0, ##FFEFD5); 
+    background: -o-linear-gradient(#FFFFE0,#FFEFD5 ); 
+    background: -moz-linear-gradient(#FFFFE0,#FFEFD5 ); 
+    background: linear-gradient(#FFFFE0, #FFEFD5); 
+    background-color: #FFFFE0; 
 }
