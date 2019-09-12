@@ -19,15 +19,15 @@ body {
     height: 5px; 
     }
  h2 {
-  text-shadow: #000080 0 0 10px; 
+  text-shadow: #FFFFE0 0 0 10px; 
  }
  img {
         border: 5px solid #FFFFE0 ;
     }
  .str {
     font: 2em Arial, sans-serif;
-    text-shadow: #4B0082 1px 1px 0, #FFEFD5 -1px -1px 0, 
-                #4B0082 -1px 1px 0, #FFEFD5 1px -1px 0;
+    text-shadow: #FFFFE0 1px 1px 0, #FFEFD5 -1px -1px 0, 
+                #FFFFE0-1px 1px 0, #FFEFD5 1px -1px 0;
    }
  .dark {
     text-shadow:#FFFFE0 0 0 10px; 
