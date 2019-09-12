@@ -38,4 +38,9 @@ footer {
     background: -moz-linear-gradient(#FFFFE0,#FFEFD5 ); 
     background: linear-gradient(#FFFFE0, #FFEFD5); 
     background-color: #FFFFE0; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
 }
