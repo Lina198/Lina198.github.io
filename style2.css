@@ -3,7 +3,7 @@
             font-size: 20px;
             border: solid 5px #000000;
             border-collapse: collapse;
-            background: url(cat.jpg)
+            background: url(cat.jpg) no-repeat;
         }
  .text{
        text-align:  center;
@@ -12,9 +12,7 @@
       background: url(kniga.jpg)no-repeat; 
        background-size : cover;
       }
-td, th {
-      background: #FAEBD7; 
-      }
+
 .weekend{
  background: #CD5C5C	; 
 }
