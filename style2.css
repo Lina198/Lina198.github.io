@@ -3,6 +3,7 @@
             font-size: 20px;
             border: solid 5px #000000;
             border-collapse: collapse;
+            background: url(cat.jpg)
         }
  .text{
        text-align:  center;
