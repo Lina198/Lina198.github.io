@@ -4,6 +4,7 @@
             border: solid 5px #000000;
             border-collapse: collapse;
             background: url(cat.jpg) no-repeat;
+  color:#00008B;
         }
  .text{
        text-align:  center;
