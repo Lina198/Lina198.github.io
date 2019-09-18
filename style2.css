@@ -1,9 +1,9 @@
  table {
             font: 2em Arial, sans-serif;
-            font-size: 50px;
+            font-size: 20px;
             border: solid 5px #000000;
             border-collapse: collapse;
-            background: url(tabl.jpg) no-repeat;
+            background: url(bga.jpg) no-repeat;
   color:#FFF0F5	;
         }
  .text{
@@ -15,7 +15,7 @@
       }
 
 .weekend{
- background: #FFE4E1	; 
+ background: #A52A2A	; 
 }
 border{
  color:#000000;
