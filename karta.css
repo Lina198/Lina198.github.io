@@ -6,22 +6,25 @@
         border: none;
       }
 body { 
-       background: url(bg.jpg) no-repeat;
+       background: url(bg.jpg) no-repeat center center fixed;
        background-size : cover;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
     }
 .fig {
     text-align: center; 
    }
-ul{
- font: 2.5em, sans-serif;
-}
 
 .lol {
-text-shadow: 0px 3px 0px #b2a98f,
-             0px 14px 10px rgba(0,0,0,0.15),
-             0px 24px 2px rgba(0,0,0,0.1),
-             0px 34px 30px rgba(0,0,0,0.1);
-font: 1.5em Arial, sans-serif;
+    font: bold 2.5em "Martyricpersonal",serif;
+    font-weight: 400;
+    font-stretch: expanded;
+}
+b {
+    font: bold 1em "BatmanForever",serif;
+    font-weight: 400;
+    font-stretch: expanded;
 }
 .VisibleText {
 	text-shadow: 2px 0 0 #fff;
@@ -35,14 +38,26 @@ font: 1.5em Arial, sans-serif;
 	margin-right: 5%;
 	border-radius: 5px;
 }
- img {
+ .bl {
         border: 5px solid #7B68EE;
     }
 
 .buttonup {
-width:200px; 
-height:316px;
+width:100px; 
+height:158px;
 position:fixed;
 bottom:20px;
 right:50px;
 }
+.transparent50 {
+    filter: alpha(Opacity=50);
+    opacity: 0.5; 
+   }
+@font-face {
+    font-family:BatmanForever; 
+    src: url(fonts/10322.ttf); 
+}
+@font-face {
+    font-family: Martyricpersonal; 
+    src: url(fonts/10908.otf); 
+   }
