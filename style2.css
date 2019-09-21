@@ -1,17 +1,26 @@
  table {
-            font: 2em Arial, sans-serif;
-            font-size: 25px;
             border: solid 5px #000000;
             border-collapse: collapse;
             background: url(bga.jpg) no-repeat;
-  color:#FFF0F5	;
+            font: bold 1.5em "BatmanForever",serif;
+            font-weight: 400;
+            font-stretch: expanded;
+            color: #000000;
+            text-shadow: 1px 0 1px #184DDE, 
+                         0 1px 1px #184DDE, 
+                        -1px 0 1px #184DDE, 
+                         0 -1px 1px #184DDE,
+                        1px 1px 1px #184DDE;
         }
  .text{
        text-align:  center;
        }
  body { 
-      background: url(fn.jpg)no-repeat; 
-       background-size : cover;
+      background: url(fn.jpg)no-repeat center center fixed; 
+      -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
       }
 
 .weekend{
@@ -19,5 +28,9 @@
 }
 border{
  color:#000000;
+}
+@font-face {
+    font-family:BatmanForever; 
+    src: url(fonts/10322.ttf); 
 }
       
