@@ -5,12 +5,12 @@
             font: bold 1.5em "BatmanForever",serif;
             font-weight: 400;
             font-stretch: expanded;
-            color: #000000;
-            text-shadow: 1px 0 1px #184DDE, 
-                         0 1px 1px #184DDE, 
-                        -1px 0 1px #184DDE, 
-                         0 -1px 1px #184DDE,
-                        1px 1px 1px #184DDE;
+           color: #F0E68C;
+           text-shadow: 2px 0 2px #8B4513, 
+                        0 2px 2px #8B4513, 
+                       -2px 0 2px #8B4513, 
+                        0 -2px 2px #8B4513,
+                        2px 2px 2px #8B4513;
         }
  .text{
        text-align:  center;
