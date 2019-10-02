@@ -1,0 +1,54 @@
+.st1
+{
+    background-color: #801818;
+    font-style: italic;
+    font-size: 50px;
+    text-indent: 6em;
+    color: #e32636;
+}
+.st2
+{
+    background-color: #3c4142;
+    font: bold 1em "BatmanForever",serif;
+    font-style: italic;
+    font-size: 70px;
+    text-indent:5em;
+    color: #fffafa;
+}
+.st3
+{
+    background-color: #000000;
+    font: bold 3em "Martyricpersonal",serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-stretch: expanded;
+    text-indent: 15em;
+    color: #FFFFFF;
+}
+.st1:hover
+{
+    background-color: #dc143c;
+}
+.st2:hover
+{
+    background-color: #c6c3b5
+}
+.st3:hover
+{
+    background-color: #808080;
+}
+body { 
+       background: url(bg.jpg) no-repeat center center fixed;
+       background-size : cover;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+    }
+@font-face {
+    font-family:BatmanForever; 
+    src: url(fonts/10322.ttf); 
+}
+@font-face {
+    font-family: Martyricpersonal; 
+    src: url(fonts/10908.otf); 
+   }
