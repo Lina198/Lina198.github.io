@@ -42,6 +42,23 @@ table{
     font-size: 200%; /* Размер шрифта первого символа */
     color: red; /* Красный цвет текста */
    }
+   tr:hover {
+    background: #000000; /* Меняем цвет фона строки таблицы */ 
+   }
+   tr:nth-child(odd) {
+    background: #f0f0f0; /* Цвет фона */
+   } 
+   tr:nth-child(even) {
+    background: #666; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+   } 
+   tr:first-child {
+    background: #000000; /* Цвет фона */
+   } 
+   tr:last-child {
+    background: #000000; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+   } 
 
 .d1{ display:none; }
 .d1:target{display:block;}
