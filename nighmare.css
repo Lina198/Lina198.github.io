@@ -11,35 +11,48 @@ body {
        -moz-background-size: cover;
        -o-background-size: cover;
        background-size: cover;
-       color:#FFFFFF;
-      font: bold 2em Arial, sans-serif;
-      text-align: center;
+       font: bold 4em "UA_A_Charming",serif;
+       color:#F0E68C;
+       text-shadow: 2px 0 2px #8B4513, 
+                 0 2px 2px #8B4513, 
+                 -2px 0 2px #8B4513, 
+                 0 -2px 2px #8B4513,
+                 2px 2px 2px #8B4513;
+
     }
 table{
 	background-color: #00BFFF;
-}    
+}   
+
+h1{
+	font: bold 2em "UA_A_Charming",serif;
+       color:#F0E68C;
+} 
 
    a:link { 
-    color: #FFFFFF; /* Цвет непосещенных ссылок */
+    color: #F0E68C; /* Цвет непосещенных ссылок */
    }
    a:visited { 
-    color: #FFFFFF; /* Цвет посещенных ссылок */
+    color: #F0E68C; /* Цвет посещенных ссылок */
    }
    a:hover { 
-    color: #FFFFFF; /* Цвет ссылок при наведении на них курсора мыши */
+    color: #8B4513; /* Цвет ссылок при наведении на них курсора мыши */
    }
    a:active { 
-    color: #FFFFFF; /* Цвет активных ссылок */
+    color: #8B4513; /* Цвет активных ссылок */
    }
 
    p {
-    font-family: Arial, Helvetica, sans-serif; /* Гарнитура шрифта основного текста */
-    font-size: 90%; /* Размер шрифта */
-    color: black; /* Черный цвет текста */
+    font-size: 90%;
+    color: #F0E68C; 
+      text-shadow: 2px 0 2px #8B4513, 
+                 0 2px 2px #8B4513, 
+                 -2px 0 2px #8B4513, 
+                 0 -2px 2px #8B4513,
+                 2px 2px 2px #8B4513;
    }
    p:first-letter {
-    font-family: 'Times New Roman', Times, serif; /* Гарнитура шрифта первой буквы */
-    font-size: 200%; /* Размер шрифта первого символа */
+    font-size: 250%; /* Размер шрифта первого символа */
     color: red; /* Красный цвет текста */
    }
    tr:hover {
@@ -59,6 +72,35 @@ table{
     background: #000000; /* Цвет фона */
     color: #fff; /* Цвет текста */
    } 
+
+   .fig {
+   	text-align: center;
+   }
+
+ .DivBackground {
+	background-color: rgba(100%,100%,100%,0.2);
+	border: 1px solid #184DDE;
+	padding: 10px;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-radius: 5px;
+}
+
+@font-face {
+    font-family: UA_A_Charming; 
+    src: url(fonts/16145.ttf); 
+}
+
+.luba{ 
+background-color: rgba(100%,100%,100%,0.2);
+color:#FFFFFF;
+position: fixed;
+left: 0px;
+top: 0px;
+height: : 100%;
+width: 100%;
+overflow: auto;
+}
 
 .d1{ display:none; }
 .d1:target{display:block;}
