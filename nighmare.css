@@ -44,6 +44,7 @@ h1{
 
    p {
     font-size: 90%;
+    font: bold 1em "UA_A_Charming",serif;
     color: #F0E68C; 
       text-shadow: 2px 0 2px #8B4513, 
                  0 2px 2px #8B4513, 
@@ -91,17 +92,6 @@ h1{
     src: url(fonts/16145.ttf); 
 }
 
-.luba{ 
-background-color: rgba(100%,100%,100%,0.2);
-color:#FFFFFF;
-position: fixed;
-left: 0px;
-top: 0px;
-height: : 100%;
-width: 100%;
-overflow: auto;
-}
-
 .d1{ display:none; }
 .d1:target{display:block;}
 
@@ -110,4 +100,92 @@ overflow: auto;
 
 .d3{ display:none; }
 .d3:target{display:block;}
+
+@-webkit-keyframes example {
+  from {top:-100px;opacity: 0;}
+  to {top:0px;opacity:1;}
+}
+
+@keyframes example {
+  from {top:-100px;opacity: 0;}
+  to {top:0px;opacity:1;}
+}
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal:target {
+  display: table;
+  position: absolute;
+}
+
+.modal-dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-dialog .modal-content {
+background: url(mira.jpg) no-repeat center center fixed;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+  background-size: cover;
+  margin: auto;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  border: 3px #777 solid;
+  text-align: justify;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+
+  -webkit-animation-name: example; 
+  -webkit-animation-duration: 0.5s; 
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+
+.closebtn {
+  text-decoration: none;
+  float: right;
+  font-size: 100px;
+  color:#F0E68C;
+  font-weight: bold;
+  color: #0000CD;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  font: bold 1em "UA_A_Charming",serif;
+  font-size: 50px;
+  padding: 30px;
+}
+
+header {
+  background-color: #00008B;
+  font: bold 1em "UA_A_Charming",serif;
+  color:#F0E68C;
+}
+
+footer {
+  background-color: #00008B;
+  font: bold 1em "UA_A_Charming",serif;
+  color:#F0E68C;
+}
+}
+
 
