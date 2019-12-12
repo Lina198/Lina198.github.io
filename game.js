@@ -3,11 +3,6 @@ for (let i = 0; i < 15; i++) {
     mas[i] = new Array(15);
 }
 
-for(let i = 0; i < 15; i++){
-	for(let j = 0; j < 15; j++){
-		mas[i][j] = 0;
-	}
-}
 let step=3;
 let move=0;
 
@@ -32,6 +27,12 @@ function  Tablica() {
      }
      NotMyTable.appendChild(NewLine);
    }  
+	for(let i = 0; i < 15; i++){
+	for(let j = 0; j < 15; j++){
+		mas[i][j] = 0;
+	}
+move=0;
+}
 }
 
 function   check(){
