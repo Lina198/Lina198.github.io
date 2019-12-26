@@ -1,0 +1,240 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+h1,h3{
+	padding-left: 50px;
+}
+.ugg-logo {
+   max-width: 20%;
+        float: left;
+    width:100px;
+    height: 34px;
+padding-bottom: 40px;
+padding-top: 30px;
+padding-left: 100px;
+}
+
+
+.fig{
+	font-size: 40px;
+	text-align: center;
+
+}
+
+body{
+	background: url(ahuei.jpg) no-repeat center center fixed;
+	background-size : cover;
+	color:white;
+	font-family: 1.5em 'EB Garamond', serif;
+	height: 100%;
+	width: 100%;
+}
+.niz{
+	padding-top: 200px;
+}
+footer{
+	padding-left: 50px;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	max-width: 100%;
+	position: absolute;
+	background-color: rgba(48, 25, 110, 0.5); 
+	}
+.cen {
+	text-align: center;
+	font-size:90px;
+}
+.obvod {
+color: #DDA0DD;
+text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;
+}
+.logo{
+	float:left;
+	padding-right: 20px;
+	padding-left: 50px;
+	width: 120px;
+	height: 120px;
+}
+.run{
+	background-color: rgba(48, 25, 110, 0.4);
+}
+
+.container {
+  background-color: rgba(48, 25, 110, 0.5); 
+  padding-top: 50px;
+  padding-bottom: 100px;
+  max-width: 100%;
+
+}
+.container1 {
+  background-color: rgba(48, 25, 110, 0.8); 
+  padding-top: 50px;
+  padding-bottom: 100px;
+  max-width: 100%;
+}
+.container2 {
+  background-color: rgba(48, 25, 110, 0.3); 
+  padding-top: 50px;
+  padding-bottom: 100px;
+  max-width: 100%;
+}
+
+
+@font-face {
+    font-family:ljk_Streamster; 
+    src: url(16881.otf); 
+}
+.list{
+	float:left;
+	margin-right: 20px;
+}
+#run ul{
+	position:relative;
+    list-style:none;
+    padding: 30px;
+}
+#win li{
+	float:left;
+	position:relative;
+    list-style:none;
+    padding: 70px;
+}
+#poz li{
+	float:left; /* все ссылки идут слева на право */
+    position:relative;
+    list-style:none;
+    padding-left: 99px;
+    padding-bottom: 55px;
+    padding-top: 10px;
+}
+#nav li{
+	font-size: 100px;
+	float:left; /* все ссылки идут слева на право */
+    list-style:none; /* убираем точки */
+    background:rgba(48, 25, 110, 0.9);
+	width: 16.5%;
+}
+#nav a{
+    text-decoration:none;
+    display:block; /* делаем блочным элементов тег "a" */
+    padding:36px 65px;
+    color:#ffffff;
+    font-size: 27px;
+}
+.nein{
+	filter: grayscale(100%);
+}
+.ja{
+     border: 2px solid #08a6ff;
+    background-color: #17172e;
+     border-radius: 30px;
+}
+
+#active a, #nav li:hover > a{
+    background:#7B68EE;
+}
+
+#nav ul {
+    padding:0;  
+    position:absolute;
+}
+
+#nav > li{
+	border-right: 2px solid #7B68EE; /* добавляем рамку к основному меню справа */
+}
+
+#nav > li:last-child{
+	border-right: none; /* убираем рамку справа основного меню */
+}
+
+
+@media (max-width:1900px){
+	#nav li{
+	font-size: 20px;
+    }
+.ugg-logo{
+	max-width: 30%
+      }
+	}
+@media (max-width: 1600px){
+	#win li{
+		padding-left: 30px;
+	}
+	#poz li{
+		padding-left: 70px;
+	}
+	.list{
+		margin-right: 250px;
+	}
+	.ugg-logo{
+	max-width: 38%
+      }
+}
+
+@media (max-width: 1100px){
+	#nav a {
+    padding:33px 10px;
+}
+.cen{
+	font-size: 70px;
+}
+#poz li{
+	padding-left: 120px;
+}
+#win li{
+    padding: 17px;
+}
+.ugg-logo{
+	height: 17px;
+	padding-left: 50px;
+      }
+#nav a{
+	font-size: 20px;
+}
+  .list{
+  	margin-right: 5px;
+  }
+}
+@media (max-width: 800px){
+	#nav li{
+	font-size: 20px;
+	width: 16.3%;
+    }
+  #poz li{
+  	padding-left: 45px;
+  }
+  .fig{
+  	font-size: 20px;
+  }
+  .list{
+  	margin-right: 10px;
+  }
+  #win li{
+  	padding: 30px;
+  }
+}
+@media (max-width: 400px){
+	#nav li{
+		width: 16.2%;
+	}
+	#nav a{
+		font-size: 9px;
+	}
+	.list{
+  	margin-right: 1000px;
+  }
+  .cen{
+  	font-size: 40px;
+  }
+  .ugg-logo{
+	height: 9px;
+	width: 70px;
+	padding-left: 15px;
+      }
+}
