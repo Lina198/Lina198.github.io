@@ -1,0 +1,26 @@
+.container1 {
+    background: url(gg.jpg);
+    background-size : cover;
+    max-width: 100%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+.colorit{
+    color: cornsilk;
+    font-size: 25px;
+}
+.container2{
+    margin-top: 80%;
+    background: url(gg.jpg) no-repeat center center fixed;
+    background-size : cover;
+    max-width: 100%;
+}
+body{
+    background: url(gg1.jpg) no-repeat center center fixed;
+    background-size : cover;
+    max-width: 100%;
+    font-family: 'Underdog' ;
+}
+.table1{
+    margin-top: 100px;
+}
