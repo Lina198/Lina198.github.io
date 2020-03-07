@@ -9,11 +9,14 @@
     color: cornsilk;
     font-size: 25px;
 }
-.container2{
-    margin-top: 80%;
+.container2 {
+    display: inline-flex;
     background: url(gg.jpg) no-repeat center center fixed;
-    background-size : cover;
+    background-size: cover;
     max-width: 100%;
+    position: fixed;
+    height: 100px;
+    bottom: 0;
 }
 body{
     background: url(gg1.jpg) no-repeat center center fixed;
@@ -23,4 +26,17 @@ body{
 }
 .table1{
     margin-top: 100px;
+}
+#search-text{
+    width: 350px;
+    margin-bottom: 15px;
+}
+#marshrut{
+    height: 30px;
+}
+.fig{
+    margin-left: 70%;
+}
+#info-table {
+    visibility: hidden;
 }
