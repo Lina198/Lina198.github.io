@@ -1,10 +1,12 @@
-
 [
-  {"name" : "Nightwish", "country" : "Финляндия", "num":"1"},
-  {"name" : "Канцлер Ги", "country" : "Россия", "num":"2"},
-  {"name" : "Nirvana", "country" : "Рим", "num":"3"},
-  {"name" : "Little big", "country" : "Люксембург", "num":"4"},
-  {"name" : "Fifth Harmony", "country" : "Бельгия", "num":"5"},
-  {"name" : "Олечка Бузова", "country" : "Донбасс", "num":"6"},
-  {"name" : "СЛОТ", "country" : "Украина", "num":"7"}
+  {"name" : "Nightwish", "country" : "Финляндия", "data": "24.05.20"},
+  {"name" : "Nightwish", "country" : "Швеция", "data": "25.05.20"},
+  {"name" : "Nightwish", "country" : "Норвегия", "data": "26.05.20"},
+  {"name" : "Nightwish", "country" : "Ирландия", "data": "27.05.20"},
+  {"name" : "Канцлер Ги", "country" : "Россия", "data": "13.03.20"},
+  {"name" : "Nirvana", "country" : "Рим", "data": "16.04.20"},
+  {"name" : "Little big", "country" : "Люксембург", "data": "24.05.20"},
+  {"name" : "Fifth Harmony", "country" : "Бельгия", "data": "22.06.20"},
+  {"name" : "Олечка Бузова", "country" : "Донбасс", "data": "17.03.20"},
+  {"name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"}
 ]
