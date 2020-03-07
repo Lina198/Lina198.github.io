@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Underdog&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="music.css">
     <script src="music.js"></script>
@@ -14,9 +14,6 @@
 <header>
     <div class = "container container1">
         <nav class="navbar navbar-expand-lg ">
-            <a class="nav-link colorit" href="index.html">
-                 <img src ="cart/naz.png" height="50" width="50" alt="nazad">
-             </a>
             <a class="navbar-brand colorit" href="#">Путешествуй и слушай</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,43 +21,44 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-          
+
                     <li class="nav-item active">
                         <a class="nav-link colorit" href="#">Главная<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link colorit" href="#">Маршрут</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </nav>
     </div>
+</header>
     <div ng-app="myApp" ng-controller="customersCtrl" class="container tabl">
         <form class="form-inline my-2 my-lg-0 ">
             <div class = "table1">
-            <input class="form-control mr-sm-2 " type="text" placeholder="Search" aria-label="Search">
-            <button class=" btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
+                <input class="form-control mr-sm-2 " type="text" placeholder="Search" aria-label="Search" id="search-text" onkeyup="tableSearch()">
+                <button class=" btn-outline-success my-2 my-sm-0 " type="submit" id="marshrut">Проложить маршрут</button>
             </div>
         </form>
-        <table class="table ">
+        <table class="table table-hover" id="info-table">
             <thead class="thead-dark">
-            <th>#</th>
             <th>Имя группы</th>
             <th>Страна</th>
+            <th>Дата концерта</th>
             </thead>
             <tr ng-repeat="x in Groups">
-                <td>{{x.num}}</td>
                 <td>{{ x.name }}</td>
                 <td>{{ x.country }}</td>
+                <td>{{ x.data }}</td>
             </tr>
         </table>
-
     </div>
-</header>
 <footer>
     <div class="container container2 colorit">
-        ДОДЕЛАТЬ
+        <p>Контактная информация<br>
+            Email: bighiljio@mail.ru<br>
+        </p>
     </div>
 </footer>
 </body>
