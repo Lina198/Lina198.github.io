@@ -34,30 +34,33 @@
         </nav>
     </div>
 </header>
-    <div ng-app="myApp" ng-controller="customersCtrl" class="container tabl">
-        <form class="form-inline my-2 my-lg-0 ">
-            <div class = "table1">
-                <input class="form-control mr-sm-2 " type="text" placeholder="Search" aria-label="Search" id="search-text" onkeyup="tableSearch()">
-                <button class=" btn-outline-success my-2 my-sm-0 " type="submit" id="marshrut">Проложить маршрут</button>
-            </div>
-        </form>
-        <table class="table table-hover" id="info-table">
-            <thead class="thead-dark">
-            <th>Имя группы</th>
-            <th>Страна</th>
-            <th>Дата концерта</th>
-            </thead>
-            <tr ng-repeat="x in Groups">
-                <td>{{ x.name }}</td>
-                <td>{{ x.country }}</td>
-                <td>{{ x.data }}</td>
-            </tr>
-        </table>
-    </div>
+<div ng-app="myApp" ng-controller="customersCtrl" class="container tabl">
+    <form class="form-inline my-2 my-lg-0 ">
+        <div class = "table1">
+            <input class="form-control mr-sm-2 " type="text" placeholder="Search" aria-label="Search" id="search-text" onkeyup="tableSearch()">
+            <button class=" btn-outline-success my-2 my-sm-0 rik " type="submit" id="marshrut">Проложить маршрут</button>
+        </div>
+    </form>
+    <table class="table table-hover" id="info-table">
+        <thead class="thead-dark">
+        <th>Имя группы</th>
+        <th>Страна</th>
+        <th>Дата концерта</th>
+        <th></th>
+        </thead>
+        <tr ng-repeat="x in Groups">
+            <td>{{ x.name }}</td>
+            <td>{{ x.country }}</td>
+            <td>{{ x.data }}</td>
+            <td><button class="btn rik" id="tik" >Добавить</button></td>
+        </tr>
+    </table>
+</div>
 <footer>
     <div class="container container2 colorit">
         <p>Контактная информация<br>
             Email: bighiljio@mail.ru<br>
+            VK: https://vk.com/linari19<br>
         </p>
     </div>
 </footer>
