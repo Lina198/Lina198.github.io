@@ -26,14 +26,14 @@ function tableSearch() {
 }
 function Rectangle() {
     var canvas = document.getElementById('canvas');
+    for(i=0;i<10;i++) {
     if (canvas.getContext) {
         var ctx = canvas.getContext('2d');
         var a=50;
         var b=50;
-        for(i=0;i<=10;i++) {
-            ctx.moveTo(a, b);
             a=a+150;
+            ctx.moveTo(a, b);
+            ctx.strokeRect(a, b, 50, 50);
         }
-        ctx.strokeRect(a, b, 50, 50);
     }
 }
