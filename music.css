@@ -15,8 +15,7 @@
     background-size: cover;
     max-width: 100%;
     position: fixed;
-    height: 200px;
-    bottom: 0;
+    margin-top: 1000px;
 }
 body{
     background: url(gg1.png) no-repeat center center fixed;
