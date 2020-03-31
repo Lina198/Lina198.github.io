@@ -25,15 +25,17 @@ function tableSearch() {
     }
 }
 function Rectangle() {
-    var canvas = document.getElementById('canvas');
-    for(i=0;i<10;i++) {
-    if (canvas.getContext) {
-        var ctx = canvas.getContext('2d');
-        var a=50;
-        var b=50;
-            a=a+150;
-            ctx.moveTo(a, b);
-            ctx.strokeRect(a, b, 50, 50);
+    var canv = document.getElementById('canvas');
+    var ctx = canv.getContext('2d');
+    canv.width = window.innerWidth;
+    canv.height = window.innerHeight;
+    var x=0;
+    if (canv.getContext) {
+    for(i=0;i<5;i++) {
+            x=x+150;
+        ctx.fillText("Имя группы", x, 60);
+            ctx.moveTo(x, 50);
+        ctx.strokeRect(x, 50, 100, 100);
         }
     }
 }
