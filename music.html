@@ -9,7 +9,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Underdog&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="music.css">
-    <script src="music.js"></script>
     <title>Hobbit</title>
 </head>
 <body>
@@ -54,7 +53,7 @@
             <td>{{ x.name }}</td>
             <td>{{ x.country }}</td>
             <td>{{ x.data }}</td>
-            <td><button class="btn rik" id="tik">Добавить</button></td>
+            <td><button class="morti btn rik" id="tik" onclick="once()">Добавить</button></td>
         </tr>
     </table>
 </div>
@@ -68,6 +67,7 @@
         </p>
     </div>
 </footer>
+<script src="music.js"></script>
 </body>
 </html>
 
