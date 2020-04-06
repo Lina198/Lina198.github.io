@@ -24,7 +24,6 @@ function tableSearch() {
 
     }
 }
-
 var btn = document.querySelector('.morti');
 var canv = document.getElementById('canvas');
 var ctx = canv.getContext('2d');
@@ -34,10 +33,14 @@ var count=0;
 function once(){
     if(count==10){alert("БОЛЬШЕ УВЫ НЕЛЬЗЯ")}
     if(count==0) {
+        ctx.fillRect(25,25,100,100);
+        ctx.clearRect(45,45,60,60);
         ctx.strokeRect(50, 50, 100, 100);
         count++;
     } else
     if(count==1) {
+        ctx.fillRect(25,25,100,100);
+        ctx.clearRect(45,45,60,60);
         ctx.strokeRect(200, 50, 100, 100);
         ctx.beginPath();
         canvas_arrow(ctx, 150, 75, 200, 75);
