@@ -1,0 +1,52 @@
+.container1 {
+    max-width: 100%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    height: 500px;
+    color: white;
+}
+.colorit{
+    color: cornsilk;
+    font-size: 25px;
+}
+.container2 {
+    display: inline-flex;
+    background-size: cover;
+    max-width: 100%;
+    height: 200px;
+   margin-top: 1000px;
+}
+#canvas {
+    display: block;
+}
+body{
+    background: url(gg1.png) no-repeat center center fixed;
+    background-size : cover;
+    max-width: 100%;
+    font-family: 'Underdog' ;
+}
+.table1{
+    margin-top: 100px;
+}
+#search-text{
+    width: 350px;
+    margin-bottom: 15px;
+}
+#marshrut{
+    height: 30px;
+}
+.fig{
+    margin-left: 70%;
+}
+#info-table {
+    visibility: visible;
+}
+
+.rik {
+    color: black;
+ background-color: coral;
+    border-color: crimson;
+}
+.morti {
+    text-align: center;
+}

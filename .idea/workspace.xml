@@ -19,6 +19,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -31,6 +32,13 @@
       <option name="presentableId" value="Default" />
       <updated>1586168270887</updated>
       <workItem from="1586168274374" duration="7459000" />
+      <workItem from="1586233653883" duration="11569000" />
+      <workItem from="1586926992517" duration="4215000" />
+      <workItem from="1587049920140" duration="638000" />
+      <workItem from="1587347813122" duration="292000" />
+      <workItem from="1587348114001" duration="9128000" />
+      <workItem from="1587383141133" duration="1967000" />
+      <workItem from="1587434811426" duration="6071000" />
     </task>
     <servers />
   </component>
@@ -42,5 +50,13 @@
       <screen x="0" y="46" width="1600" height="854" />
     </state>
     <state x="530" y="223" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.46.1600.854@0.46.1600.854" timestamp="1586178886977" />
+    <state x="580" y="231" key="FileChooserDialogImpl" timestamp="1587348109131">
+      <screen x="0" y="46" width="1600" height="854" />
+    </state>
+    <state x="580" y="231" key="FileChooserDialogImpl/0.46.1600.854@0.46.1600.854" timestamp="1587348109131" />
+    <state x="507" y="300" key="com.intellij.ide.util.TipDialog" timestamp="1586233652028">
+      <screen x="0" y="46" width="1600" height="854" />
+    </state>
+    <state x="507" y="300" key="com.intellij.ide.util.TipDialog/0.46.1600.854@0.46.1600.854" timestamp="1586233652028" />
   </component>
 </project>

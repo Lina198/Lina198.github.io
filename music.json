@@ -1,22 +1,18 @@
 [
-  {"name" : "Nightwish", "country" : "Финляндия", "data": "24.05.20"},
-  {"name" : "Nightwish", "country" : "Швеция", "data": "25.05.20"},
-  {"name" : "Nightwish", "country" : "Норвегия", "data": "26.05.20"},
-  {"name" : "Nightwish", "country" : "Ирландия", "data": "27.05.20"},
-  {"name" : "Канцлер Ги", "country" : "Россия", "data": "13.03.20"},
-  {"name" : "Nirvana", "country" : "Рим", "data": "16.04.20"},
-  {"name" : "Little big", "country" : "Люксембург", "data": "24.05.20"},
-  {"name" : "Fifth Harmony", "country" : "Бельгия", "data": "22.06.20"},
-  {"name" : "Олечка Бузова", "country" : "Донбасс", "data": "17.03.20"},
-  {"name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"},
-  {"name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"},
-  {"name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"},
-  {"name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"},
-  {"name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"},
-  {"name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"},
-  {"name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"},
-  {"name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"},
-  {"name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"}
-
-
+  {"id" : "1", "name" : "Nightwish", "country" : "Финляндия", "data": "24.05.20"},
+  {"id" : "2","name" : "Nightwish", "country" : "Швеция", "data": "25.05.20"},
+  {"id" : "3","name" : "Nightwish", "country" : "Норвегия", "data": "26.05.20"},
+  {"id" : "4","name" : "Nightwish", "country" : "Ирландия", "data": "27.05.20"},
+  {"id" : "5","name" : "Канцлер Ги", "country" : "Россия", "data": "13.03.20"},
+  {"id" : "6","name" : "Nirvana", "country" : "Рим", "data": "16.04.20"},
+  {"id" : "7","name" : "Little big", "country" : "Люксембург", "data": "24.05.20"},
+  {"id" : "8","name" : "Fifth Harmony", "country" : "Бельгия", "data": "22.06.20"},
+  {"id" : "9","name" : "Олечка Бузова", "country" : "Донбасс", "data": "17.03.20"},
+  {"id" : "10","name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"},
+  {"id" : "11","name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"},
+  {"id" : "12","name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"},
+  {"id" : "13","name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"},
+  {"id" : "14","name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"},
+  {"id" : "15","name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"},
+  {"id" : "16","name" : "СЛОТ", "country" : "Украина", "data": "30.03.20"}
 ]
