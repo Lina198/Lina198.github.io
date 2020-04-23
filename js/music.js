@@ -1,6 +1,7 @@
 var btn = document.querySelector('.morti');
 var canv = document.getElementById('canvas');
 var ctx = canv.getContext('2d');
+var clear = document.getElementById("clear");
 canv.width = window.innerWidth;
 canv.height = 150;
 var count=0;
@@ -45,7 +46,20 @@ app.controller('customersCtrl', function($scope,$http) {
         $scope.x_row+=150;
     }
 
+    clear.onclick = function()
+    {
+        $scope.x_row =50;
+            var context = canvas.getContext("2d");
+            context.clearRect(0, 0, 250, 380);
+            canv.width = window.innerWidth;
+            canv.height = 150;
+            coords.splice(0, coords.length);
+            console.log("Очистка ", coords);
+    }
+
 });
+
+
 
 function tableSearch() {
     document.getElementById('info-table').style.visibility = "visible";
