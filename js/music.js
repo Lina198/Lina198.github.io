@@ -6,22 +6,26 @@ canv.height = 150;
 var count=0;
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope,$http) {
+    $scope.peremena ="";
     $http.get("music.json").then(function(response) {
         $scope.Groups = response.data;
     });
-    $scope.my_func = function() {
-        $scope.getIndexById($scope.Groups=[],$scope.Groups.id );
-    }
     $scope.getIndexById = function(arr, id) {
-        $scope.index = 0, length = arr.length, i = 0;
-        for (; i < length; i++) {
-            if (arr[i]['id'] === $scope.Groups.id)  {
-                index = i;
-                break;
+        for (var x in arr) {
+            if (arr[x].id == id) {
+                return ctx.fillText(arr[x].country,50,100);
             }
         }
-        return ctx.fillText(index,100,50);;
+        return null;
     }
+    $scope.my_func = function() {
+        $http.get("music.json").then(function(response) {
+            $scope.lolik = response.data;
+            $scope.getIndexById($scope.lolik,7 );
+        });
+
+    }
+
     $scope.once = function ()
         {
         if(count==10){alert("БОЛЬШЕ УВЫ НЕЛЬЗЯ")}

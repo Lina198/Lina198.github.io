@@ -70,7 +70,7 @@
 				<div class="hs-text">
 					<div class="container">
 						<h2>Лучшие <span>песни и концерты</span> здесь</h2>
-						<p>Создай свой собственный маршрут путешествия!</p>
+						<p>Создай свой собственный маршрут путешествия по живописной Европе!</p>
 					</div>
 				</div>
 			</div>
@@ -103,7 +103,7 @@
 			<form class="form-inline my-2 my-lg-0 ">
 				<div class = "table1">
 					<input class="form-control mr-sm-2 " type="text" placeholder="Search" aria-label="Search" id="search-text" onkeyup="tableSearch()">
-					<button class=" btn-outline-success my-2 my-sm-0 rik " type="submit" id="marshrut">Проложить маршрут</button>
+					<button class=" btn-outline-success my-2 my-sm-0 rik " type="submit" id="marshrut" onclick="location.href='music2.html'">Проложить маршрут</button>
 				</div>
 			</form>
 			<table class="table table-hover" id="info-table">
@@ -117,7 +117,7 @@
 					<td>{{ x.name }}</td>
 					<td>{{ x.country }}</td>
 					<td>{{ x.data }}</td>
-					<td><button class="morti btn rik" id="tik" ng-click="once($event)">Добавить</button></td>
+					<td><button class="morti btn rik" id="tik"  ng-click="once($event)">Добавить</button></td>
 				</tr>
 			</table>
 		</div>
