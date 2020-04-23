@@ -6,98 +6,45 @@ canv.height = 150;
 var count=0;
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope,$http) {
-    $scope.peremena ="";
+
     $http.get("music.json").then(function(response) {
         $scope.Groups = response.data;
     });
+
     $scope.getIndexById = function(arr, id) {
         for (var x in arr) {
             if (arr[x].id == id) {
-                return ctx.fillText(arr[x].country,50,100);
+                ctx.fillText(arr[x].country,$scope.x_row -125,100);
+                ctx.fillText(arr[x].data,$scope.x_row -125,125);
             }
         }
         return null;
     }
-    $scope.my_func = function() {
+    $scope.my_func = function(id, x_row) {
         $http.get("music.json").then(function(response) {
             $scope.lolik = response.data;
-            $scope.getIndexById($scope.lolik,7 );
+            $scope.getIndexById($scope.lolik,id);
         });
 
     }
 
-    $scope.once = function ()
-        {
-        if(count==10){alert("БОЛЬШЕ УВЫ НЕЛЬЗЯ")}
-        if(count==0) {
-            ctx.strokeRect(50, 50, 100, 100);
-            count++;
-        } else
-        if(count==1) {
-            ctx.strokeRect(200, 50, 100, 100);
-            ctx.beginPath();
-            canvas_arrow(ctx, 150, 75, 200, 75);
-            ctx.stroke();
-            $scope.my_func();
-            count++;
-        } else
-        if(count==2) {
-            ctx.strokeRect(350, 50, 100, 100);
-            ctx.beginPath();
-            canvas_arrow(ctx, 300, 75, 350, 75);
-            ctx.stroke();
-            count++;
-        } else
-        if(count==3) {
-            ctx.strokeRect(500, 50, 100, 100);
-            ctx.beginPath();
-            canvas_arrow(ctx, 450, 75, 500, 75);
-            ctx.stroke();
-            count++;
-        } else
-        if(count==4) {
-            ctx.strokeRect(650, 50, 100, 100);
-            ctx.beginPath();
-            canvas_arrow(ctx, 600, 75, 650, 75);
-            ctx.stroke();
-            count++;
-        } else
-        if(count==5) {
-            ctx.strokeRect(800, 50, 100, 100);
-            ctx.beginPath();
-            canvas_arrow(ctx, 750, 75, 800, 75);
-            ctx.stroke();
-            count++;
-        } else
-        if(count==6) {
-            ctx.strokeRect(950, 50, 100, 100);
-            ctx.beginPath();
-            canvas_arrow(ctx, 900, 75, 950, 75);
-            ctx.stroke();
-            count++;
-        } else
-        if(count==7) {
-            ctx.strokeRect(1100, 50, 100, 100);
-            ctx.beginPath();
-            canvas_arrow(ctx, 1050, 75, 1100, 75);
-            ctx.stroke();
-            count++;
-        } else
-        if(count==8) {
-            ctx.strokeRect(1250, 50, 100, 100);
-            ctx.beginPath();
-            canvas_arrow(ctx, 1200, 75, 1250, 75);
-            ctx.stroke();
-            count++;
-        } else
-        if(count==9) {
-            ctx.strokeRect(1400, 50, 100, 100);
-            ctx.beginPath();
-            canvas_arrow(ctx, 1350, 75, 1400, 75);
-            ctx.stroke();
-            count++;
+    $scope.x_row=50;
+
+    $scope.once = function (event){
+        if ($scope.x_row==1400){
+            alert("БОЛЬШЕ УВЫ НЕЛЬЗЯ")
+            return 0;
         }
+        ctx.strokeRect($scope.x_row, 50, 100, 100);
+        if($scope.x_row-50>0) {
+            ctx.beginPath();
+            canvas_arrow(ctx, $scope.x_row -50, 75, $scope.x_row+0, 75);
+            ctx.stroke();
+        }
+        $scope.my_func(event.target.value,$scope.x_row);
+        $scope.x_row+=150;
     }
+
 });
 
 function tableSearch() {
