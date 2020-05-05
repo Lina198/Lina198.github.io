@@ -56,4 +56,29 @@ body{
 .clear {
     margin-left: 1400px;
 }
-
+.map
+{
+    position: relative;
+    text-align: center;
+}
+svg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 98%;
+    width: 100%;
+    margin-bottom: 30%;
+}
+path
+{
+    opacity: 0.4;
+    fill: #fd7e14;
+    cursor: pointer;
+    transition: 0.3s;
+}
+path:hover
+{
+    opacity: 0.8;
+    transition: 0.3s;
+}

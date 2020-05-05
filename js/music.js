@@ -8,6 +8,8 @@ var count=0;
 var app = angular.module('myApp', []);
 app.controller('customersCtrl', function($scope,$http) {
 
+    $scope.id_arr=[];
+
     $http.get("music.json").then(function(response) {
         $scope.Groups = response.data;
     });
@@ -15,6 +17,7 @@ app.controller('customersCtrl', function($scope,$http) {
     $scope.getIndexById = function(arr, id) {
         for (var x in arr) {
             if (arr[x].id == id) {
+                $scope.id_arr.push(id);
                 ctx.fillText(arr[x].country,$scope.x_row -125,100);
                 ctx.fillText(arr[x].data,$scope.x_row -125,125);
             }
@@ -93,5 +96,6 @@ function canvas_arrow(context, fromx, fromy, tox, toy) {
     context.moveTo(tox, toy);
     context.lineTo(tox - headlen * Math.cos(angle + Math.PI / 6), toy - headlen * Math.sin(angle + Math.PI / 6));
 }
+
 
 
