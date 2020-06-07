@@ -1,5 +1,4 @@
 var btn = document.querySelector('.morti');
-var btn = document.querySelector('.morti');
 var canv = document.getElementById('canvas');
 var ctx = canv.getContext('2d');
 var clear = document.getElementById("clear");
@@ -11,15 +10,21 @@ app.controller('customersCtrl', function($scope,$http) {
 
     $scope.id_arr=[];
 
+    $scope.coord_arr=[];
+
     $http.get("music.json").then(function(response) {
         $scope.Groups = response.data;
+    });
+
+    $http.get("counrty.json").then(function(response) {
+        $scope.country = response.data;
     });
 
     $scope.getIndexById = function(arr, id) {
         for (var x in arr) {
             if (arr[x].id == id) {
-                $scope.id_arr.push(arr[x]); // теперь мы возвращаем ждемент массива, а не его id
-		return null;// а ещё отрисовка надписи перенеслись в евент
+                $scope.id_arr.push(arr[x]);
+		return null;
             }
         }
         return null;
@@ -35,12 +40,19 @@ app.controller('customersCtrl', function($scope,$http) {
     $scope.x_row=50;
 
     $scope.once = function (event){
-	$scope.my_func(event.target.value);// добавление нового элемента в массив с турами
-	refresh(); // очистка экрана 
-	$scope.id_arr.sort(sort_by_date);  // сортировка массива с турами по дате
-	for(var x in $scope.id_arr){// теперь тут цикл, который занова отрисовывает все элементы 
+        alert();
+
+	$scope.my_func(event.target.value);
+	refresh();
+  // тут должна быть функция, которая убирает всё нарисованое с карты
+	$scope.id_arr.sort(sort_by_date);
+  var x_;
+  var y_;
+
+  $scope.coord_arr=[];
+	for(var x in $scope.id_arr){
         if ($scope.x_row==1400){
-            alert("БОЛЬШЕ УВЫ НЕЛЬЗЯ");
+            alert("hfuikewjfopjewopfjodjf");
             return 0;
         }
         ctx.strokeRect($scope.x_row, 50, 100, 100);
@@ -48,10 +60,27 @@ app.controller('customersCtrl', function($scope,$http) {
             ctx.beginPath();
             canvas_arrow(ctx, $scope.x_row -50, 75, $scope.x_row+0, 75);
             ctx.stroke();
+            var coord_ = tour_country($scope.id_arr[x],$scope.country);
+            x_ = coord_.x;
+            y_ = coord_.y;
         }
-	ctx.fillText($scope.id_arr[x].country,$scope.x_row -125,100);
+        else{
+          var coord = tour_country($scope.id_arr[x],$scope.country);
+          var x1 = coord.x;
+          var y1 = coord.y;
+          alert(x1);
+          $scope.coord_arr.push({"x1":x_,"y1":y_,"x2":x1,"y2":y1,});
+          // тут функция которая рисует стрелочку из города с координатами x_ и y_ в город с координатами x и y
+
+
+            x_=x1;
+            y_=y1;
+        }
+
+        ctx.fillText($scope.id_arr[x].country,$scope.x_row -125,100);
         ctx.fillText($scope.id_arr[x].data,$scope.x_row -125,125);
         $scope.x_row+=150;
+
 	}
     }
 
@@ -64,11 +93,22 @@ app.controller('customersCtrl', function($scope,$http) {
             coords.splice(0, coords.length);
     }
 
+    function tour_country(tour, country){
+      for(var x in country){
+        if(tour.country==country[x].id){
+          var coord={"x":country[x].x,"y":country[x].y}
+          return coord;
+          }
+        }
+      }
+      return null;
+    }
+
     function sort_by_date(a, b) { // функция сортировки по дате для JSON
 	var dateA = new Date(a.date).getTime();
 	var dateB = new Date(b.date).getTime();
 	console.log(dateA.length); console.log(dateB);
-	return dateA > dateB ? 1 : -1;  
+	return dateA > dateB ? 1 : -1;
     };
 
     clear.onclick = function()
@@ -78,8 +118,9 @@ app.controller('customersCtrl', function($scope,$http) {
             context.clearRect(0, 0, 250, 380);
             canv.width = window.innerWidth;
             canv.height = 150;
-            coords.splice(0, coords.length);
+            //coords.splice(0, coords.length);
             console.log("Очистка ", coords);
+            $scope.id_arr=[];
     }
 
 });
@@ -118,6 +159,3 @@ function canvas_arrow(context, fromx, fromy, tox, toy) {
     context.moveTo(tox, toy);
     context.lineTo(tox - headlen * Math.cos(angle + Math.PI / 6), toy - headlen * Math.sin(angle + Math.PI / 6));
 }
-
-
-
